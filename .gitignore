@@ -18,3 +18,8 @@ venv/
 
 # TypeScript build info
 *.tsbuildinfo
+
+# Python build artifacts
+*.egg-info/
+.venv/
+uv.lock
