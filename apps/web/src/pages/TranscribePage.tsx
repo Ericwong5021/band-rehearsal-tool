@@ -43,7 +43,9 @@ export default function TranscribePage() {
         setStatus("播放结束");
       };
     } catch (err) {
-      setStatus(`播放失败: ${err instanceof Error ? err.message : String(err)}`);
+      setStatus(
+        `播放失败: ${err instanceof Error ? err.message : String(err)}`,
+      );
     }
   }, [audioFile]);
 
@@ -57,9 +59,7 @@ export default function TranscribePage() {
     <div className="space-y-6">
       <div>
         <h2 className="text-2xl font-bold text-gray-900">AI 识谱转写</h2>
-        <p className="mt-1 text-gray-600">
-          上传音频文件，AI 自动识别乐谱信息
-        </p>
+        <p className="mt-1 text-gray-600">上传音频文件，AI 自动识别乐谱信息</p>
       </div>
 
       {/* Upload Area */}
@@ -101,13 +101,9 @@ export default function TranscribePage() {
 
       {/* Placeholder for transcription result */}
       <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-        <h3 className="text-lg font-semibold text-gray-900 mb-2">
-          转写结果
-        </h3>
+        <h3 className="text-lg font-semibold text-gray-900 mb-2">转写结果</h3>
         <p className="text-gray-500 text-sm">
-          {audioFile
-            ? "AI 识谱功能开发中，敬请期待..."
-            : "请先上传音频文件"}
+          {audioFile ? "AI 识谱功能开发中，敬请期待..." : "请先上传音频文件"}
         </p>
       </div>
     </div>

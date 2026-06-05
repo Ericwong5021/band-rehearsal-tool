@@ -84,13 +84,9 @@ export default function SeparatePage() {
 
       {/* Placeholder for results */}
       <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-        <h3 className="text-lg font-semibold text-gray-900 mb-2">
-          分离结果
-        </h3>
+        <h3 className="text-lg font-semibold text-gray-900 mb-2">分离结果</h3>
         <p className="text-gray-500 text-sm">
-          {audioFile
-            ? "音轨分离功能开发中，敬请期待..."
-            : "请先上传音频文件"}
+          {audioFile ? "音轨分离功能开发中，敬请期待..." : "请先上传音频文件"}
         </p>
       </div>
     </div>

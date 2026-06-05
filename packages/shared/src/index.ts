@@ -6,7 +6,13 @@
 export type AudioFormat = "mp3" | "wav" | "flac" | "ogg";
 
 // 音轨类型
-export type TrackType = "vocals" | "drums" | "bass" | "other" | "piano" | "guitar";
+export type TrackType =
+  | "vocals"
+  | "drums"
+  | "bass"
+  | "other"
+  | "piano"
+  | "guitar";
 
 // 分离结果
 export interface SeparationResult {

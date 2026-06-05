@@ -23,5 +23,5 @@ app.include_router(separate.router, prefix="/api", tags=["separate"])
 
 
 @app.get("/")
-async def root():
+async def root() -> dict[str, str]:
     return {"message": "乐队排练辅助工具 API", "version": "0.1.0"}

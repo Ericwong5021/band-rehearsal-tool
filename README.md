@@ -10,14 +10,14 @@ AI 驱动的音乐排练助手，让每一次排练更高效。
 
 ## 技术栈
 
-| 层级 | 选型 |
-|:---|:---|
-| 前端 | React 18 + TypeScript + Vite + TailwindCSS |
-| 后端 | Python FastAPI |
-| 音频 | WebAudio API + Demucs |
-| AI 推理 | ONNX Runtime Web |
-| 状态管理 | Zustand |
-| 包管理 | pnpm monorepo |
+| 层级     | 选型                                       |
+| :------- | :----------------------------------------- |
+| 前端     | React 18 + TypeScript + Vite + TailwindCSS |
+| 后端     | Python FastAPI                             |
+| 音频     | WebAudio API + Demucs                      |
+| AI 推理  | ONNX Runtime Web                           |
+| 状态管理 | Zustand                                    |
+| 包管理   | pnpm monorepo                              |
 
 ## 快速开始
 

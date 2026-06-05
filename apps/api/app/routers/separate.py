@@ -4,7 +4,7 @@ router = APIRouter()
 
 
 @router.post("/separate")
-async def separate_audio(file: UploadFile = File(...)):
+async def separate_audio(file: UploadFile = File(...)) -> dict[str, str]:
     """音轨分离接口 (placeholder)"""
     return {
         "status": "not_implemented",
