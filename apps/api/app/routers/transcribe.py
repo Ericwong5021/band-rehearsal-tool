@@ -1,0 +1,13 @@
+from fastapi import APIRouter, UploadFile, File
+
+router = APIRouter()
+
+
+@router.post("/transcribe")
+async def transcribe_audio(file: UploadFile = File(...)):
+    """AI识谱转写接口 (placeholder)"""
+    return {
+        "status": "not_implemented",
+        "message": "AI识谱功能开发中",
+        "filename": file.filename,
+    }
